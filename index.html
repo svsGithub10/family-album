@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Family Album</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <!-- LEFT: structure -->
+    <aside class="sidebar">
+      <div class="header">
+        <div class="title-block">
+          <h1>Family Album</h1>
+          <p>Curated memories • Google&nbsp;Drive</p>
+        </div>
+        <div class="tag">
+          <span class="tag-dot"></span>
+          <span>Private Collection</span>
+        </div>
+      </div>
+
+      <ul class="accordion">
+        <!-- FUNCTION 1: UNIVERSAL FAMILY -->
+        <li class="accordion-item level-1 has-photo-bg"
+            style="--section-image: url('images/download.jpg');">
+          <button class="accordion-header">
+            <div class="accordion-label">
+              <!-- Replace with your family group photo -->
+              <div class="avatar"
+                   style="background-image: url('https://via.placeholder.com/150?text=Family');"></div>
+              <div class="label-text">
+                <div class="pill">Family</div>
+                <div class="accordion-title">Universal Family</div>
+                <div class="accordion-subtitle">All family members & volumes</div>
+              </div>
+            </div>
+            <div class="accordion-icon">›</div>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-inner">
+              <ul class="accordion">
+                <!-- MEMBER: Sister -->
+                <li class="accordion-item level-2 has-photo-bg"
+                    style="--section-image: url('https://via.placeholder.com/800x400?text=Sister');">
+                  <button class="accordion-header">
+                    <div class="accordion-label">
+                      <!-- Replace with real sister photo -->
+                      <div class="avatar"
+                           style="background-image: url('https://via.placeholder.com/150?text=Sister');"></div>
+                      <div class="label-text">
+                        <div class="pill">Member</div>
+                        <div class="accordion-title">Sister</div>
+                        <div class="accordion-subtitle">All volumes of Sister</div>
+                      </div>
+                    </div>
+                    <div class="accordion-icon">›</div>
+                  </button>
+                  <div class="accordion-body">
+                    <div class="accordion-inner">
+                      <!-- VOLUMES AS FINAL LINKS -->
+                      <div class="album-links">
+                        <!-- Replace href with actual Drive links -->
+                        <a class="album-link"
+                           href="https://drive.google.com/your-sister-vol1"
+                           target="_blank"
+                           data-display="Sister • Volume 1">
+                          <span>Vol 1 — Childhood & School Days</span>
+                        </a>
+                        <a class="album-link"
+                           href="https://drive.google.com/your-sister-vol2"
+                           target="_blank"
+                           data-display="Sister • Volume 2">
+                          <span>Vol 2 — College & Friends</span>
+                        </a>
+                        <a class="album-link"
+                           href="https://drive.google.com/your-sister-vol3"
+                           target="_blank"
+                           data-display="Sister • Volume 3">
+                          <span>Vol 3 — Abroad Life</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- MEMBER: Brother -->
+                <li class="accordion-item level-2 has-photo-bg"
+                    style="--section-image: url('https://via.placeholder.com/800x400?text=Brother');">
+                  <button class="accordion-header">
+                    <div class="accordion-label">
+                      <!-- Replace with real brother photo -->
+                      <div class="avatar"
+                           style="background-image: url('https://via.placeholder.com/150?text=Brother');"></div>
+                      <div class="label-text">
+                        <div class="pill">Member</div>
+                        <div class="accordion-title">Brother</div>
+                        <div class="accordion-subtitle">All volumes of Brother</div>
+                      </div>
+                    </div>
+                    <div class="accordion-icon">›</div>
+                  </button>
+                  <div class="accordion-body">
+                    <div class="accordion-inner">
+                      <div class="album-links">
+                        <a class="album-link"
+                           href="https://drive.google.com/your-brother-vol1"
+                           target="_blank"
+                           data-display="Brother • Volume 1">
+                          <span>Vol 1 — School & Sports</span>
+                        </a>
+                        <a class="album-link"
+                           href="https://drive.google.com/your-brother-vol2"
+                           target="_blank"
+                           data-display="Brother • Volume 2">
+                          <span>Vol 2 — Graduation</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- MEMBER: Parents -->
+                <li class="accordion-item level-2 has-photo-bg"
+                    style="--section-image: url('https://via.placeholder.com/800x400?text=Parents');">
+                  <button class="accordion-header">
+                    <div class="accordion-label">
+                      <!-- Replace with parents photo -->
+                      <div class="avatar"
+                           style="background-image: url('https://via.placeholder.com/150?text=Parents');"></div>
+                      <div class="label-text">
+                        <div class="pill">Member</div>
+                        <div class="accordion-title">Parents</div>
+                        <div class="accordion-subtitle">Anniversaries & trips</div>
+                      </div>
+                    </div>
+                    <div class="accordion-icon">›</div>
+                  </button>
+                  <div class="accordion-body">
+                    <div class="accordion-inner">
+                      <div class="album-links">
+                        <a class="album-link"
+                           href="https://drive.google.com/your-parents-vol1"
+                           target="_blank"
+                           data-display="Parents • Volume 1">
+                          <span>Vol 1 — Old Photos & Memories</span>
+                        </a>
+                        <a class="album-link"
+                           href="https://drive.google.com/your-parents-vol2"
+                           target="_blank"
+                           data-display="Parents • Volume 2">
+                          <span>Vol 2 — Anniversaries</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <!-- FUNCTION 2: SISTER MARRIAGE -->
+        <li class="accordion-item level-1 has-photo-bg"
+            style="--section-image: url('https://via.placeholder.com/800x400?text=Wedding');">
+          <button class="accordion-header">
+            <div class="accordion-label">
+              <!-- Use a nice wedding cover photo -->
+              <div class="avatar"
+                   style="background-image: url('https://via.placeholder.com/150?text=Wedding');"></div>
+              <div class="label-text">
+                <div class="pill">Function</div>
+                <div class="accordion-title">Sister Marriage</div>
+                <div class="accordion-subtitle">All wedding sub-functions</div>
+              </div>
+            </div>
+            <div class="accordion-icon">›</div>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-inner">
+              <ul class="accordion">
+                <!-- ENGAGEMENT -->
+                <li class="accordion-item level-2 has-photo-bg"
+                    style="--section-image: url('https://via.placeholder.com/800x400?text=Engagement');">
+                  <button class="accordion-header">
+                    <div class="accordion-label">
+                      <div class="avatar"
+                           style="background-image: url('https://via.placeholder.com/150?text=Engage');"></div>
+                      <div class="label-text">
+                        <div class="pill">Event</div>
+                        <div class="accordion-title">Engagement</div>
+                        <div class="accordion-subtitle">Pre-wedding ceremony</div>
+                      </div>
+                    </div>
+                    <div class="accordion-icon">›</div>
+                  </button>
+                  <div class="accordion-body">
+                    <div class="accordion-inner">
+                      <div class="album-links">
+                        <a class="album-link"
+                           href="https://drive.google.com/engagement-vol1"
+                           target="_blank"
+                           data-display="Engagement • Volume 1">
+                          <span>Vol 1 — Engagement Photos</span>
+                        </a>
+                        <a class="album-link"
+                           href="https://drive.google.com/engagement-vol2"
+                           target="_blank"
+                           data-display="Engagement • Volume 2">
+                          <span>Vol 2 — Engagement Videos</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- HALDI -->
+                <li class="accordion-item level-2 has-photo-bg"
+                    style="--section-image: url('https://via.placeholder.com/800x400?text=Haldi');">
+                  <button class="accordion-header">
+                    <div class="accordion-label">
+                      <div class="avatar"
+                           style="background-image: url('https://via.placeholder.com/150?text=Haldi');"></div>
+                      <div class="label-text">
+                        <div class="pill">Event</div>
+                        <div class="accordion-title">Haldi</div>
+                        <div class="accordion-subtitle">Traditional function</div>
+                      </div>
+                    </div>
+                    <div class="accordion-icon">›</div>
+                  </button>
+                  <div class="accordion-body">
+                    <div class="accordion-inner">
+                      <div class="album-links">
+                        <a class="album-link"
+                           href="https://drive.google.com/haldi-vol1"
+                           target="_blank"
+                           data-display="Haldi • Volume 1">
+                          <span>Vol 1 — Haldi Photos</span>
+                        </a>
+                        <a class="album-link"
+                           href="https://drive.google.com/haldi-vol2"
+                           target="_blank"
+                           data-display="Haldi • Volume 2">
+                          <span>Vol 2 — Haldi Videos</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- REELS -->
+                <li class="accordion-item level-2 has-photo-bg"
+                    style="--section-image: url('https://via.placeholder.com/800x400?text=Reels');">
+                  <button class="accordion-header">
+                    <div class="accordion-label">
+                      <div class="avatar"
+                           style="background-image: url('https://via.placeholder.com/150?text=Reels');"></div>
+                      <div class="label-text">
+                        <div class="pill">Event</div>
+                        <div class="accordion-title">Reels</div>
+                        <div class="accordion-subtitle">Social & edits</div>
+                      </div>
+                    </div>
+                    <div class="accordion-icon">›</div>
+                  </button>
+                  <div class="accordion-body">
+                    <div class="accordion-inner">
+                      <div class="album-links">
+                        <a class="album-link"
+                           href="https://drive.google.com/reels-vol1"
+                           target="_blank"
+                           data-display="Reels • Volume 1">
+                          <span>Vol 1 — Edited Reels</span>
+                        </a>
+                        <a class="album-link"
+                           href="https://drive.google.com/reels-vol2"
+                           target="_blank"
+                           data-display="Reels • Volume 2">
+                          <span>Vol 2 — Raw Clips</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- MARRIAGE CEREMONY -->
+                <li class="accordion-item level-2 has-photo-bg"
+                    style="--section-image: url('https://via.placeholder.com/800x400?text=Marriage');">
+                  <button class="accordion-header">
+                    <div class="accordion-label">
+                      <div class="avatar"
+                           style="background-image: url('https://via.placeholder.com/150?text=Wedding+Day');"></div>
+                      <div class="label-text">
+                        <div class="pill">Event</div>
+                        <div class="accordion-title">Marriage Ceremony</div>
+                        <div class="accordion-subtitle">Main wedding event</div>
+                      </div>
+                    </div>
+                    <div class="accordion-icon">›</div>
+                  </button>
+                  <div class="accordion-body">
+                    <div class="accordion-inner">
+                      <div class="album-links">
+                        <a class="album-link"
+                           href="https://drive.google.com/marriage-vol1"
+                           target="_blank"
+                           data-display="Marriage • Volume 1">
+                          <span>Vol 1 — Wedding Photos</span>
+                        </a>
+                        <a class="album-link"
+                           href="https://drive.google.com/marriage-vol2"
+                           target="_blank"
+                           data-display="Marriage • Volume 2">
+                          <span>Vol 2 — Wedding Videos</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- POST MARRIAGE -->
+                <li class="accordion-item level-2 has-photo-bg"
+                    style="--section-image: url('https://via.placeholder.com/800x400?text=Post+Marriage');">
+                  <button class="accordion-header">
+                    <div class="accordion-label">
+                      <div class="avatar"
+                           style="background-image: url('https://via.placeholder.com/150?text=Reception');"></div>
+                      <div class="label-text">
+                        <div class="pill">Event</div>
+                        <div class="accordion-title">Post Marriage</div>
+                        <div class="accordion-subtitle">Reception & rituals</div>
+                      </div>
+                    </div>
+                    <div class="accordion-icon">›</div>
+                  </button>
+                  <div class="accordion-body">
+                    <div class="accordion-inner">
+                      <div class="album-links">
+                        <a class="album-link"
+                           href="https://drive.google.com/postmarriage-vol1"
+                           target="_blank"
+                           data-display="Post Marriage • Volume 1">
+                          <span>Vol 1 — Reception</span>
+                        </a>
+                        <a class="album-link"
+                           href="https://drive.google.com/postmarriage-vol2"
+                           target="_blank"
+                           data-display="Post Marriage • Volume 2">
+                          <span>Vol 2 — Family Moments</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <!-- You can add more main functions like Tours, Festivals, etc. here in the same pattern -->
+
+      </ul>
+
+      <p class="hint">
+        Tip: Change each <code>avatar</code> and <code>--section-image</code> URL to your own family photos.
+        Images are automatically faded & made monochrome to match the theme.
+      </p>
+    </aside>
+
+    <!-- RIGHT: info panel -->
+    <section class="content">
+      <div class="display-card" id="info-card">
+        <div class="display-header">
+          <div>
+            <div class="display-title" id="display-title">Select an album</div>
+            <div class="display-subtitle" id="display-subtitle">
+              Click any volume on the left to open its Google Drive link.
+            </div>
+          </div>
+          <div class="badge">Album Preview</div>
+        </div>
+
+        <p class="display-meta" id="display-meta">
+          This panel shows a brief description of the album you’ve selected. Use it as an index to remember what each
+          Drive link contains — like Childhood, Trips, Weddings, Reels, and more. You can fully customize the names
+          on the left to match your family events.
+        </p>
+
+        <div class="display-footer">
+          <div class="meta-tags">
+            <span class="meta-tag">Monochrome UI</span>
+            <span class="meta-tag">Grey • White • Black</span>
+            <span class="meta-tag">Drive integrated</span>
+          </div>
+          <button class="primary-button" id="open-latest">
+            <span>Open Last Album</span> ↗
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

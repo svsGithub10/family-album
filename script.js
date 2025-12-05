@@ -51,3 +51,12 @@
         alert("Select any album or sub-function from the left panel first.");
       }
     });
+
+      function showAlertAndRedirect(event) {
+    event.preventDefault(); // Stop immediate opening
+
+    alert("This is not the final high-quality version. A clearer video will be uploaded soon! Press OK to continue");
+
+    // Redirect after clicking OK
+    window.open("https://drive.google.com/drive/folders/1HbTFkF1UUT3mWNXjGnmePKnBP2yfZbm5?usp=drive_link", "_blank");
+  }

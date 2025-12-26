@@ -64,7 +64,7 @@
 
   const key = "active_visitors";
   const now = Date.now();
-  const timeout = 15000; // 15 sec window
+  const timeout = 300000; // 15 sec window
 
   let visitors = JSON.parse(localStorage.getItem(key)) || [];
   visitors.push(now);

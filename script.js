@@ -60,3 +60,27 @@
     // Redirect after clicking OK
     window.open("https://drive.google.com/drive/folders/1HbTFkF1UUT3mWNXjGnmePKnBP2yfZbm5?usp=drive_link", "_blank");
   }
+
+
+  const key = "active_visitors";
+  const now = Date.now();
+  const timeout = 15000; // 15 sec window
+
+  let visitors = JSON.parse(localStorage.getItem(key)) || [];
+  visitors.push(now);
+
+  // remove inactive visitors
+  visitors = visitors.filter(t => now - t < timeout);
+
+  localStorage.setItem(key, JSON.stringify(visitors));
+
+  document.getElementById("visitorCount").textContent = visitors.length;
+
+  // update every 5 sec
+  setInterval(() => {
+    let v = JSON.parse(localStorage.getItem(key)) || [];
+    const n = Date.now();
+    v = v.filter(t => n - t < timeout);
+    localStorage.setItem(key, JSON.stringify(v));
+    document.getElementById("visitorCount").textContent = v.length;
+  }, 5000);

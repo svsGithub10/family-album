@@ -579,14 +579,31 @@
 }
 
 .album-link {
-  position: relative;
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 10px;
-  text-decoration: none;
+  gap: 8px;
+
+  /* IMPORTANT */
+  flex-wrap: wrap;          /* allows wrapping on small screens */
+  max-width: 100%;
+}
+
+.album-text {
+  flex: 1;
+  min-width: 0;             /* critical for mobile */
+  word-break: break-word;   /* prevents overflow */
 }
 
 .new-tag {
+  flex-shrink: 0;           /* keeps tag readable */
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 12px;
+  background: #ff3b3b;
+  color: #fff;
+  animation: pulse 1.4s infinite;
+}
+/* .new-tag {
   background: #ff3b3b;
   color: #fff;
   font-size: 11px;
@@ -595,7 +612,7 @@
   border-radius: 12px;
   text-transform: uppercase;
   animation: pulse 1.4s infinite;
-}
+} */
 
 /* subtle attention animation */
 @keyframes pulse {
